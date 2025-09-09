@@ -25,37 +25,37 @@ cd <repo-folder>
 
 
 Install dependencies:
-
+```bash
 npm install
 
 
 Install Playwright browsers:
-
+```bash
 npx playwright install
 
 Running Tests
 
 Run all tests:
-
+```bash
 npx playwright test
 
 
 Run a specific file:
-
+```bash
 npx playwright test e2e.spec.js
 
 
 Run in headed mode:
-
+```bash
 npx playwright test --headed
 
 
 Generate HTML report:
-
+```bash
 npx playwright show-report
 
 Test Structure
-
+```bash
 Login tests: valid and invalid logins for multiple users
 
 Full purchase flow: add products, checkout, verify order
@@ -69,7 +69,7 @@ All tests use test.step() for clear reporting.
 Test Strategy
 
 User scenarios
-
+```bash
 standard_user: happy path
 
 locked_out_user: login failure
@@ -77,7 +77,7 @@ locked_out_user: login failure
 problem_user / visual_user / performance_glitch_user: detect bugs, visual diffs, slow loading
 
 Assertions
-
+```bash
 URL checks: expect(page).toHaveURL(...)
 
 Element visibility: expect(locator).toBeVisible()
